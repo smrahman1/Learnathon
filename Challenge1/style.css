@@ -1,0 +1,42 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  font-family: 'Nunito', sans-serif;
+  background-color: #262626;
+}
+
+.bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 90%;
+  min-height: 10vh;
+  list-style: none;
+  font-size: 8vh;
+}
+
+.bar a{
+  color: teal;
+  text-decoration: none;
+}
+
+.bar a:hover{
+  color: tomato;
+  transition: .5s;
+}
+
+.Name {
+  font-size: 5vh;
+}
+.Name:hover{
+  color: green;
+  transition: .5s;
+}
