@@ -3,6 +3,12 @@
    License: none (public domain)
 */
 
+* {
+  --desertsand: #E6BEAE;
+  --almond: #E7D8C9;
+  --champagnepink: #E6CDC3;
+}
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -109,3 +115,118 @@ html, body {
     color: purple;
     transition: .5s;
   }
+
+  #chat-container {
+    background-color: white;
+    height: 80vh;
+    width: 92vw;
+    margin: 0em;
+    padding: 0em;
+    display: grid;
+    grid-template-rows: 0.5fr 4fr 0.5fr;
+}
+
+#chat-container h1 {
+    text-indent: 1rem;
+}
+
+#headbar {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 0rem;
+    border-bottom: 2px solid grey; 
+    border-radius: 0.625rem;
+    order: 0;
+}
+
+
+#convo {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+}
+
+#date {
+    text-align: center;
+    color: grey;
+    opacity: 0.8;
+}
+
+#messages {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+.chat {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.icons {
+    display: flex;
+    flex-flow: column;
+    place-items: center center;
+}
+
+.bottomicon {
+    margin-top: auto;
+    margin-bottom: 1rem;
+}
+
+.icon-circle {
+    border: 2px solid red;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
+
+.chatreverse {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.iconsreverse {
+    display: flex;
+    flex-flow: column;
+    place-items: center center;
+}
+
+.secondperson {
+    border: 2px solid blue;
+    border-radius: 50%;
+    padding: 1rem;
+    background: linear-gradient(to right, var(--champagnepink), var(--desertsand));
+}
+
+#messagebar {
+    display: block;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    background-color: grey;
+    border-radius: 2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    place-items: center center;
+    order: 3;
+}
+
+#fillertext {
+    margin-left: 2rem;
+    opacity: 0.5;
+}
+
+.baricons {
+    width: 1.5rem;
+    height: 1.5rem;   
+    margin-left: 1rem;
+}
+
+#groupediconsl {
+    margin-left: auto;
+}
+
+#groupediconsr {
+    margin-right: 1.5rem;
+}
