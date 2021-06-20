@@ -104,3 +104,8 @@ html, body {
   #dashboard {
       background-color: #98B9F2;
   }
+  
+  .dashboard a:hover{
+    color: purple;
+    transition: .5s;
+  }
