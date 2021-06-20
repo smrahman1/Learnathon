@@ -1,0 +1,47 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+#container {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+#navbar {
+    height: 20vh;
+    width: 92vw;
+    background-color: blue;
+}
+
+#dashboard {
+    width: 8vw;
+    float: left;
+}
+
+#chatapp {
+    overflow: hidden;
+}
+
+#chat-container {
+    background-color: red;
+    height: 80vh;
+    width: 92vw;
+    margin: 0px;
+    padding: 0px;
+}
+
+#chat-container p {
+    margin: 0px;
+    padding: 0px;
+}
