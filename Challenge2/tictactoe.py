@@ -45,6 +45,7 @@ def checkWin(board):
     else:
         return False
 
+#check for draw
 def boardCheck(count):
     for i in range (3):
         for j in range (3):
@@ -54,8 +55,9 @@ def boardCheck(count):
         return True
     return False
 
-#player turn
+#game
 while play:
+    #output board
     repeat=True
     print(123)
     print(456)
@@ -67,10 +69,12 @@ while play:
     if (boardCheck(count)):
         print("It's a draw!")
         break
+    #player 1
     if turn==1:
         while repeat:
             pos = input("Enter a corresponding number! \nPlayer 1:")
             pos.lower
+            #placement of X on board
             if (pos=='1' and board[0][0]==empty):
                 board[0][0]=board[0][0].replace('-',"X")
                 repeat=False
@@ -98,16 +102,19 @@ while play:
             elif (pos=='9' and board[2][2]==empty):
                 board[2][2]=board[2][2].replace('-',"X")
                 repeat=False
+            #checks for win and changes turns
             if not repeat:
                 if checkWin(board):
                     print("Player 1 Won!!")
                     play=False
                     break
                 turn=2
+    #player 2
     elif turn==2:
         while repeat:
             pos = input("Enter a corresponding number! \nPlayer 2:")
             pos.lower
+            #placement of O on board
             if (pos=='1' and board[0][0]==empty):
                 board[0][0]=board[0][0].replace('-',"O")
                 repeat=False
@@ -135,12 +142,14 @@ while play:
             elif (pos=='9' and board[2][2]==empty):
                 board[2][2]=board[2][2].replace('-',"O")
                 repeat=False
+            #checks for win and changes turns
             if not repeat:
                 if checkWin(board):
                     print("Player 1 Won!!")
                     play=False
                     break
                 turn=1
+#game end output of board
 for i in range (3):
     for j in range (3):
         print(board[i][j], end="")
